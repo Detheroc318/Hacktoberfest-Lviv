@@ -12,6 +12,9 @@ final class WelcomeRouter: Router {
     
     public func createSingInModule() -> UIViewController {
         let welcomeVC = UIStoryboard.Main.welcomeVC
+        let googleManager = GoogleManager()
+        let presenter = WelcomeVCPresenter(manager: googleManager)
+        welcomeVC.presenter = presenter
         
         return welcomeVC
     }

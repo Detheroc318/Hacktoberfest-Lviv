@@ -10,6 +10,8 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
 
+    var presenter: WelcomePresenter!
+    
     //MARK: - View
     @IBOutlet private weak var bicycleImage: UIImageView!
     @IBOutlet private weak var backgroundImage: UIImageView!
@@ -20,12 +22,13 @@ final class WelcomeViewController: UIViewController {
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         setupUI()
     }
     
     //MARK: - Private
     @IBAction func didTapOnGoogleSingIn(_ sender: UIButton) {
-        
+        presenter.authWithGoogle(viewController: self)
     }
     
     private func setupUI() {
