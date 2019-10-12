@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,99 @@
             <objects>
                 <viewController storyboardIdentifier="WelcomeViewController" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Hacktoberfest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JaL-GS-HFQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle" translatesAutoresizingMaskIntoConstraints="NO" id="XlE-GZ-d98">
+                                <rect key="frame" x="27" y="127" width="186" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="SHy-Qi-Uh0"/>
+                                    <constraint firstAttribute="width" constant="186" id="y7c-OF-a54"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Biceapp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eab-pl-QBR">
+                                <rect key="frame" x="31" y="264" width="260" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="Tji-Yg-iDz"/>
+                                    <constraint firstAttribute="height" constant="49" id="mD6-W4-QE9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKu-xz-OtY">
+                                <rect key="frame" x="14" y="670" width="347" height="45"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="6YX-wZ-WR8">
+                                        <rect key="frame" x="30" y="12" width="40" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="KIP-ie-Ieq"/>
+                                            <constraint firstAttribute="height" constant="22" id="YKc-sD-MJc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iC-NO-IHk">
+                                        <rect key="frame" x="101" y="4" width="165" height="37"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="Sing in with Google">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapOnGoogleSingIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5E-J6-owM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="6YX-wZ-WR8" firstAttribute="top" secondItem="EKu-xz-OtY" secondAttribute="top" constant="12" id="F5w-j5-M7M"/>
+                                    <constraint firstItem="7iC-NO-IHk" firstAttribute="centerY" secondItem="EKu-xz-OtY" secondAttribute="centerY" id="W1c-l7-aSU"/>
+                                    <constraint firstItem="6YX-wZ-WR8" firstAttribute="leading" secondItem="EKu-xz-OtY" secondAttribute="leading" constant="30" id="duo-g8-npR"/>
+                                    <constraint firstAttribute="height" constant="45" id="kTz-XZ-JUE"/>
+                                    <constraint firstItem="7iC-NO-IHk" firstAttribute="centerX" secondItem="EKu-xz-OtY" secondAttribute="centerX" constant="10" id="tEH-cx-yc7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JaL-GS-HFQ" secondAttribute="bottom" id="0hy-a6-BpF"/>
+                            <constraint firstItem="JaL-GS-HFQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3In-nQ-iL4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EKu-xz-OtY" secondAttribute="trailing" constant="14" id="47e-P0-dOo"/>
+                            <constraint firstItem="JaL-GS-HFQ" firstAttribute="top" secondItem="XlE-GZ-d98" secondAttribute="bottom" constant="-251" id="9bU-Ro-jag"/>
+                            <constraint firstItem="JaL-GS-HFQ" firstAttribute="leading" secondItem="Eab-pl-QBR" secondAttribute="trailing" constant="-291" id="BSu-fg-IAK"/>
+                            <constraint firstItem="Eab-pl-QBR" firstAttribute="leading" secondItem="XlE-GZ-d98" secondAttribute="trailing" constant="-182" id="Bdu-Q5-LA4"/>
+                            <constraint firstAttribute="trailing" secondItem="JaL-GS-HFQ" secondAttribute="trailing" id="Erf-Mr-Xhx"/>
+                            <constraint firstItem="JaL-GS-HFQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VaP-yd-pCd"/>
+                            <constraint firstItem="JaL-GS-HFQ" firstAttribute="leading" secondItem="XlE-GZ-d98" secondAttribute="trailing" constant="-213" id="VjR-lB-OTe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EKu-xz-OtY" secondAttribute="bottom" constant="63" id="ZVl-lH-DhD"/>
+                            <constraint firstItem="EKu-xz-OtY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="fpd-Yy-zoT"/>
+                            <constraint firstItem="Eab-pl-QBR" firstAttribute="top" secondItem="XlE-GZ-d98" secondAttribute="bottom" constant="13" id="yzG-IL-CGx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="JaL-GS-HFQ" id="j1V-HW-PCp"/>
+                        <outlet property="bicycleImage" destination="XlE-GZ-d98" id="TWP-OZ-hRs"/>
+                        <outlet property="googleImage" destination="6YX-wZ-WR8" id="MV0-Zx-444"/>
+                        <outlet property="singInButton" destination="7iC-NO-IHk" id="nYQ-P7-SWf"/>
+                        <outlet property="welcomeLabel" destination="Eab-pl-QBR" id="ewf-fA-8uR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.200000000000003" y="20.689655172413794"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="375" height="812"/>
+        <image name="bicycle" width="128" height="128"/>
+        <image name="google" width="128" height="128"/>
+    </resources>
 </document>

@@ -8,13 +8,34 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
 
+    //MARK: - View
+    @IBOutlet private weak var bicycleImage: UIImageView!
+    @IBOutlet private weak var backgroundImage: UIImageView!
+    @IBOutlet private weak var googleImage: UIImageView!
+    @IBOutlet private weak var singInButton: UIButton!
+    @IBOutlet private weak var welcomeLabel: UILabel!
+    
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupUI()
     }
-
-
+    
+    //MARK: - Private
+    @IBAction func didTapOnGoogleSingIn(_ sender: UIButton) {
+        
+    }
+    
+    private func setupUI() {
+        bicycleImage.image = DefaultImage.bicycle.image
+        backgroundImage.image = DefaultImage.background.image
+        googleImage.image = DefaultImage.google.image
+        singInButton.setTitle(WelcomeScreenConst.singinWithGoogle, for: .normal)
+        welcomeLabel.text = WelcomeScreenConst.welcomeLabel
+        welcomeLabel.textColor = AppColor.mainGreen
+    }
+    
 }
 
