@@ -8,11 +8,11 @@
 
 import UIKit
 
-extension UIColor {
+//MARK: - UIColor+ MainColors
+enum AppColor {
     
     static var mainGreen: UIColor {
-        return UIColor(red: 80, green: 227, blue: 194, alpha: 1)
+        return UIColor(red: 80, green: 227, blue: 255, alpha: 1)
     }
-
-
+    
 }
