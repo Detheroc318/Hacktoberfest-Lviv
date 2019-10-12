@@ -66,3 +66,14 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+*.lock
+.DS_Store
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/*.xcscmblueprint
+*/*.xcodeproj/xcuserdata/
+
+Pods/
+archive/HacktoberfestStore.xcarchive/
+Podfile.lock
