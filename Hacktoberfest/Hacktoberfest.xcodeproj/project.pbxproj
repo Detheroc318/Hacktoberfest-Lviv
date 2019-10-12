@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEA49A098C263E66D732E69D /* Pods_Hacktoberfest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7A966191B2B1BAD47BA145 /* Pods_Hacktoberfest.framework */; };
 		F46BF0002351CFDB00E4FB3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BEFFF2351CFDB00E4FB3F /* AppDelegate.swift */; };
 		F46BF0022351CFDB00E4FB3F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF0012351CFDB00E4FB3F /* WelcomeViewController.swift */; };
 		F46BF0052351CFDB00E4FB3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46BF0032351CFDB00E4FB3F /* Main.storyboard */; };
@@ -19,9 +20,16 @@
 		F46BF01F2351DDDB00E4FB3F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF01E2351DDDB00E4FB3F /* AppColor.swift */; };
 		F46BF0222351DEC800E4FB3F /* DefaultImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF0212351DEC800E4FB3F /* DefaultImage.swift */; };
 		F46BF0242351E56600E4FB3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF0232351E56600E4FB3F /* Constants.swift */; };
+		F49F09962351EC8E000B72C2 /* GoogleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F09952351EC8E000B72C2 /* GoogleManager.swift */; };
+		F49F09982351F232000B72C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F49F09972351F232000B72C2 /* GoogleService-Info.plist */; };
+		F49F099B2351F691000B72C2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F099A2351F691000B72C2 /* UserModel.swift */; };
+		F49F099D2351F9CC000B72C2 /* WelcomeModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F099C2351F9CC000B72C2 /* WelcomeModulePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		460999FE3101CDC1DF808729 /* Pods-Hacktoberfest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hacktoberfest.debug.xcconfig"; path = "Target Support Files/Pods-Hacktoberfest/Pods-Hacktoberfest.debug.xcconfig"; sourceTree = "<group>"; };
+		5DE6889F8B456AC8FAC91FE7 /* Pods-Hacktoberfest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hacktoberfest.release.xcconfig"; path = "Target Support Files/Pods-Hacktoberfest/Pods-Hacktoberfest.release.xcconfig"; sourceTree = "<group>"; };
+		9E7A966191B2B1BAD47BA145 /* Pods_Hacktoberfest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hacktoberfest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46BEFFC2351CFDB00E4FB3F /* Hacktoberfest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hacktoberfest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46BEFFF2351CFDB00E4FB3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F46BF0012351CFDB00E4FB3F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +44,10 @@
 		F46BF01E2351DDDB00E4FB3F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		F46BF0212351DEC800E4FB3F /* DefaultImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImage.swift; sourceTree = "<group>"; };
 		F46BF0232351E56600E4FB3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F49F09952351EC8E000B72C2 /* GoogleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleManager.swift; sourceTree = "<group>"; };
+		F49F09972351F232000B72C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F49F099A2351F691000B72C2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F49F099C2351F9CC000B72C2 /* WelcomeModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModulePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA49A098C263E66D732E69D /* Pods_Hacktoberfest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C5C489995FA15C806562968 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				460999FE3101CDC1DF808729 /* Pods-Hacktoberfest.debug.xcconfig */,
+				5DE6889F8B456AC8FAC91FE7 /* Pods-Hacktoberfest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6BEDF0DDF1CAAFD8E90FB983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E7A966191B2B1BAD47BA145 /* Pods_Hacktoberfest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F46BEFF32351CFDB00E4FB3F = {
 			isa = PBXGroup;
 			children = (
 				F46BEFFE2351CFDB00E4FB3F /* Hacktoberfest */,
 				F46BEFFD2351CFDB00E4FB3F /* Products */,
+				2C5C489995FA15C806562968 /* Pods */,
+				6BEDF0DDF1CAAFD8E90FB983 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +100,8 @@
 		F46BEFFE2351CFDB00E4FB3F /* Hacktoberfest */ = {
 			isa = PBXGroup;
 			children = (
+				F49F09992351F687000B72C2 /* Model */,
+				F49F09942351EC7B000B72C2 /* Manager */,
 				F46BF0202351DDE000E4FB3F /* Helpers */,
 				F46BF0182351D4DD00E4FB3F /* Extension */,
 				F46BF0152351D45600E4FB3F /* Modules */,
@@ -77,6 +111,7 @@
 				F46BF0062351CFDE00E4FB3F /* Assets.xcassets */,
 				F46BF0082351CFDE00E4FB3F /* LaunchScreen.storyboard */,
 				F46BF00B2351CFDE00E4FB3F /* Info.plist */,
+				F49F09972351F232000B72C2 /* GoogleService-Info.plist */,
 			);
 			path = Hacktoberfest;
 			sourceTree = "<group>";
@@ -92,8 +127,8 @@
 		F46BF0152351D45600E4FB3F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F46BF0012351CFDB00E4FB3F /* WelcomeViewController.swift */,
-				F46BF0162351D49C00E4FB3F /* WelcomeVCRouter.swift */,
+				F49F09A2235200D0000B72C2 /* MapView */,
+				F49F09A1235200C5000B72C2 /* Welcome */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -117,6 +152,63 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		F49F09942351EC7B000B72C2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F49F09952351EC8E000B72C2 /* GoogleManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F49F09992351F687000B72C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F49F099A2351F691000B72C2 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F49F099E2352005F000B72C2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F49F099C2351F9CC000B72C2 /* WelcomeModulePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F49F099F23520067000B72C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F46BF0012351CFDB00E4FB3F /* WelcomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F49F09A023520070000B72C2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F46BF0162351D49C00E4FB3F /* WelcomeVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F49F09A1235200C5000B72C2 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F49F09A023520070000B72C2 /* Router */,
+				F49F099F23520067000B72C2 /* Controller */,
+				F49F099E2352005F000B72C2 /* Presenter */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F49F09A2235200D0000B72C2 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F46BF00E2351CFDE00E4FB3F /* Build configuration list for PBXNativeTarget "Hacktoberfest" */;
 			buildPhases = (
+				7913DBC02E5B49E4C6A6FE33 /* [CP] Check Pods Manifest.lock */,
 				F46BEFF82351CFDB00E4FB3F /* Sources */,
 				F46BEFF92351CFDB00E4FB3F /* Frameworks */,
 				F46BEFFA2351CFDB00E4FB3F /* Resources */,
+				8C834BD4E3D72594EB13963A /* [CP] Embed Pods Frameworks */,
+				55DDCBBFE218A3F0208AB955 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46BF00A2351CFDE00E4FB3F /* LaunchScreen.storyboard in Resources */,
+				F49F09982351F232000B72C2 /* GoogleService-Info.plist in Resources */,
 				F46BF0072351CFDE00E4FB3F /* Assets.xcassets in Resources */,
 				F46BF0052351CFDB00E4FB3F /* Main.storyboard in Resources */,
 			);
@@ -183,20 +279,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55DDCBBFE218A3F0208AB955 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hacktoberfest/Pods-Hacktoberfest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hacktoberfest/Pods-Hacktoberfest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hacktoberfest/Pods-Hacktoberfest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7913DBC02E5B49E4C6A6FE33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hacktoberfest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C834BD4E3D72594EB13963A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hacktoberfest/Pods-Hacktoberfest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hacktoberfest/Pods-Hacktoberfest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hacktoberfest/Pods-Hacktoberfest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F46BEFF82351CFDB00E4FB3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49F09962351EC8E000B72C2 /* GoogleManager.swift in Sources */,
 				F46BF01B2351D4FB00E4FB3F /* UIStoryboard+Name.swift in Sources */,
 				F46BF0022351CFDB00E4FB3F /* WelcomeViewController.swift in Sources */,
 				F46BF0142351D2D200E4FB3F /* Router.swift in Sources */,
 				F46BF01F2351DDDB00E4FB3F /* AppColor.swift in Sources */,
+				F49F099D2351F9CC000B72C2 /* WelcomeModulePresenter.swift in Sources */,
 				F46BF0172351D49C00E4FB3F /* WelcomeVCRouter.swift in Sources */,
 				F46BF0222351DEC800E4FB3F /* DefaultImage.swift in Sources */,
 				F46BF0002351CFDB00E4FB3F /* AppDelegate.swift in Sources */,
 				F46BF01C2351D4FB00E4FB3F /* UIStoryboard+InisiateViewController.swift in Sources */,
 				F46BF0242351E56600E4FB3F /* Constants.swift in Sources */,
+				F49F099B2351F691000B72C2 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +498,7 @@
 		};
 		F46BF00F2351CFDE00E4FB3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460999FE3101CDC1DF808729 /* Pods-Hacktoberfest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +517,7 @@
 		};
 		F46BF0102351CFDE00E4FB3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE6889F8B456AC8FAC91FE7 /* Pods-Hacktoberfest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
