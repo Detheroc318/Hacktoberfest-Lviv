@@ -16,6 +16,9 @@
 		F46BF0172351D49C00E4FB3F /* WelcomeVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF0162351D49C00E4FB3F /* WelcomeVCRouter.swift */; };
 		F46BF01B2351D4FB00E4FB3F /* UIStoryboard+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF0192351D4FB00E4FB3F /* UIStoryboard+Name.swift */; };
 		F46BF01C2351D4FB00E4FB3F /* UIStoryboard+InisiateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF01A2351D4FB00E4FB3F /* UIStoryboard+InisiateViewController.swift */; };
+		F46BF01F2351DDDB00E4FB3F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF01E2351DDDB00E4FB3F /* AppColor.swift */; };
+		F46BF0222351DEC800E4FB3F /* DefaultImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF0212351DEC800E4FB3F /* DefaultImage.swift */; };
+		F46BF0242351E56600E4FB3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46BF0232351E56600E4FB3F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		F46BF0162351D49C00E4FB3F /* WelcomeVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVCRouter.swift; sourceTree = "<group>"; };
 		F46BF0192351D4FB00E4FB3F /* UIStoryboard+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Name.swift"; sourceTree = "<group>"; };
 		F46BF01A2351D4FB00E4FB3F /* UIStoryboard+InisiateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+InisiateViewController.swift"; sourceTree = "<group>"; };
+		F46BF01E2351DDDB00E4FB3F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		F46BF0212351DEC800E4FB3F /* DefaultImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImage.swift; sourceTree = "<group>"; };
+		F46BF0232351E56600E4FB3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		F46BEFFE2351CFDB00E4FB3F /* Hacktoberfest */ = {
 			isa = PBXGroup;
 			children = (
+				F46BF0202351DDE000E4FB3F /* Helpers */,
 				F46BF0182351D4DD00E4FB3F /* Extension */,
 				F46BF0152351D45600E4FB3F /* Modules */,
 				F46BF0122351D2BF00E4FB3F /* CompositionRoot */,
@@ -98,6 +105,16 @@
 				F46BF0192351D4FB00E4FB3F /* UIStoryboard+Name.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F46BF0202351DDE000E4FB3F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F46BF01E2351DDDB00E4FB3F /* AppColor.swift */,
+				F46BF0212351DEC800E4FB3F /* DefaultImage.swift */,
+				F46BF0232351E56600E4FB3F /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,9 +191,12 @@
 				F46BF01B2351D4FB00E4FB3F /* UIStoryboard+Name.swift in Sources */,
 				F46BF0022351CFDB00E4FB3F /* WelcomeViewController.swift in Sources */,
 				F46BF0142351D2D200E4FB3F /* Router.swift in Sources */,
+				F46BF01F2351DDDB00E4FB3F /* AppColor.swift in Sources */,
 				F46BF0172351D49C00E4FB3F /* WelcomeVCRouter.swift in Sources */,
+				F46BF0222351DEC800E4FB3F /* DefaultImage.swift in Sources */,
 				F46BF0002351CFDB00E4FB3F /* AppDelegate.swift in Sources */,
 				F46BF01C2351D4FB00E4FB3F /* UIStoryboard+InisiateViewController.swift in Sources */,
+				F46BF0242351E56600E4FB3F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

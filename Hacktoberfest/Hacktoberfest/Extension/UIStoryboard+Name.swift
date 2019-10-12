@@ -12,7 +12,6 @@ extension UIStoryboard {
     
     public enum Names {
         static let Main = UIStoryboard(name: "Main", bundle: nil)
-        static let SingUp = UIStoryboard(name: "SingUp", bundle: nil)
     }
     
     enum Main {
